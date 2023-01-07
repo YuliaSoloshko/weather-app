@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="src/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4ddb5d8bc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <form id="locality-form">
+            <input type="text" placeholder="Enter your locality" id="city-name"/>
+            <input type="submit" value="OK" />
+          </form>
+          <br />
+          <div class="card mb-3" style="max-width: 100%">
+            <div class="row g-0">
+              <div class="col-md-7">
+                <img src="src/images/Kharkiv.jpg" class="img-fluid rounded-start kharkiv" alt="Kharkiv"  />
+              </div>
+              <div class="col-md-5">
+                <div class="card-body">
+                  <h1 class="card-title">Kharkiv</h1>
+                  <h2 ><div id="time">Thursday 17:00</div></h2>
+                  <p class="card-text">
+                    <ul>
+                      <li> 🌡 <span id="temp">19</span>  <a href="#" id="celcius">°C</a> | <a href="#" id="farenheit">°F</a></li>
+                      <li>☁  Mostly cloudy</li>
+                      <li>💧 85%</li>
+                      <li>🌬 3 m/sec, east</li>
+                    </ul>
+                  </p>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="card" style="max-width: 100%">
+                <img src="src/images/Kyiv.jpg" class="card-img-top" alt="Kyiv" />
+                <div class="card-body city">
+                  <p class="card-text ">Kyiv<div class="temp">0°C/-2°C</div></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="max-width: 100%">
+               <img src="src/images/Lisbon.jpg" class="card-img-top" alt="..." />
+                <div class="card-body city">
+                  <p class="card-text ">Lisbon<div class="temp">0°C/-2°C</div></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card" style="max-width: 100%">
+                <img src="src/images/Seoul.jpg" class="card-img-top" alt="..." />
+               <div class="card-body city">
+                 <p class="card-text">Seoul<div class="temp">0°C/-2°C</div></p>
+               </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <ul class="future">
+             <li class="days">🌞Monday <div class="temp">0°C/-2°C</div></li>
+             <li class="days">⛅Tuesday<div class="temp">0°C/-2°C</div></li>
+             <li class="days">🌧Wednesday<div class="temp">0°C/-2°C</div></li>
+             <li class="days">🌤Thursday<div class="temp">0°C/-2°C</div></li>
+             <li class="days">🌨Friday<div class="temp">0°C/-2°C</div></li> 
+          </ul>
+        </div> 
+      </div>
+    </div>  
+    <script src="src/index.js"> </script>
+  </body>
+</html>
