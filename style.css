@@ -38,3 +38,8 @@ a {
   height: 300px;
   width: 500px;
 }
+#bottom {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
