@@ -31,6 +31,9 @@ ul {
   font-size: 15px;
   color: gray;
 }
+a {
+  text-decoration: none;
+}
 .kharkiv {
   height: 300px;
   width: 500px;
