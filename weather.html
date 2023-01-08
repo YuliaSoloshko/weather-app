@@ -11,7 +11,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a4ddb5d8bc.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -21,6 +22,8 @@
           <form id="locality-form">
             <input type="text" placeholder="Enter your locality" id="city-name"/>
             <input type="submit" value="OK" />
+            <input  type="button" value="Current" id="current-button"/>
+
           </form>
           <br />
           <div class="card mb-3" style="max-width: 100%">
@@ -30,14 +33,15 @@
               </div>
               <div class="col-md-5">
                 <div class="card-body">
-                  <h1 class="card-title">Kharkiv</h1>
+                  <h1 class="card-title" id=searchCity>Kharkiv</h1>
                   <h2 ><div id="time">Thursday 17:00</div></h2>
                   <p class="card-text">
                     <ul>
-                      <li> 🌡 <span id="temp">19</span>  <a href="#" id="celcius">°C</a> | <a href="#" id="farenheit">°F</a></li>
-                      <li>☁  Mostly cloudy</li>
-                      <li>💧 85%</li>
-                      <li>🌬 3 m/sec, east</li>
+                      <li> 🌡 <span id="temp">19 </span>°C</li>
+            
+                      <li>☁<span id=description>   Mostly cloudy</span></li>
+                      <li>💧 <span id=humidity> 85</span> %</li>
+                      <li>🌬<span id=wind> 3 m/sec</span></li>
                     </ul>
                   </p>
                 </div> 
