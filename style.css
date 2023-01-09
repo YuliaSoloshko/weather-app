@@ -4,13 +4,32 @@ form {
 }
 h1 {
   color: #1b4c22;
+  margin-bottom: 0;
+}
+h2 {
+  margin-bottom: 0;
 }
 
 ul {
   list-style-type: none;
+  margin-bottom: 0;
+  text-align: left;
+}
+li:first-letter {
+  text-transform: capitalize;
 }
 .card-title {
   text-align: center;
+}
+.card-body {
+  padding: 0;
+  text-align: center;
+}
+.card-text {
+  margin-bottom: 0;
+}
+.card-text-main {
+  margin-bottom: 0;
 }
 .future {
   margin-top: 55px;
@@ -20,6 +39,9 @@ ul {
   font-weight: bold;
   color: #da9402;
   text-align: center;
+}
+#icon {
+  margin: 0 auto;
 }
 .days {
   padding: 10px;
