@@ -65,3 +65,7 @@ a {
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
 }
+.active {
+  color: rgb(44, 37, 37);
+  cursor: default;
+}
