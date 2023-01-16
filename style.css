@@ -3,15 +3,22 @@ form {
   width: 100%;
 }
 h1 {
-  color: #1b4c22;
+  color: #0b062c;
   margin-bottom: 0;
+  font-style: italic;
 }
 h2 {
   margin-bottom: 0;
+  font-style: italic;
 }
 
 ul {
   list-style-type: none;
+  margin-bottom: 0;
+  text-align: left;
+}
+li:first-letter {
+  text-transform: capitalize;
   margin-bottom: 0;
   text-align: left;
 }
@@ -31,8 +38,15 @@ li:first-letter {
 .card-text-main {
   margin-bottom: 0;
 }
-.future {
-  margin-top: 55px;
+.card-body {
+  padding: 0;
+  text-align: center;
+}
+.card-text {
+  margin-bottom: 0;
+}
+.card-text-main {
+  margin-bottom: 0;
 }
 #time {
   font-size: 28px;
@@ -42,12 +56,6 @@ li:first-letter {
 }
 #icon {
   margin: 0 auto;
-}
-.days {
-  padding: 10px;
-  margin-top: 30px;
-  line-height: 1.3;
-  text-align: center;
 }
 .weather-forecast-temperatures,
 .temp {
@@ -75,8 +83,19 @@ img {
 }
 .weather-forecast {
   text-align: center;
-  margin-top: 30px;
 }
 #forecast-icon {
   display: inline;
+}
+.one-day-block {
+  margin-top: 30px;
+}
+.weather-forecast-day {
+  color: #da9402;
+  font-style: italic;
+}
+#description {
+  color: #0b062c;
+  font-style: italic;
+  font-weight: 500;
 }
