@@ -35,13 +35,13 @@
                 <div class="card-body">
                   <h1 class="card-title" id=searchCity>Kharkiv</h1>
                   <h2 ><div id="time">Thursday 17:00</div></h2>
-                  <p class="card-text">
+                  <div><img src="" alt="Clear" id="icon"/></div>
+                  <p class="card-text-main">
                     <ul>
-                      <li> 🌡 <span id="temp">19 </span>°C</li>
-            
-                      <li>☁<span id=description>   Mostly cloudy</span></li>
-                      <li>💧 <span id=humidity> 85</span> %</li>
-                      <li>🌬<span id=wind> 3 </span> m/s</li>
+                      <li> <span id="description">   Mostly cloudy</span></li>
+                      <li> 🌡<span id="temp">19 </span><span id="units"><a href="#" id="celsius-link" class="active">°C </a>|<a href="#" id="fahrenheit-link">°F</a></span></li>
+                      <li>💧 <span id="humidity"> 85</span> %</li>
+                      <li>🌬<span id="wind"> 3 </span> m/s</li>
                     </ul>
                   </p>
                 </div> 
@@ -76,15 +76,10 @@
           </div>
         </div>
         <div class="col-4">
-          <ul class="future">
-             <li class="days">🌞Monday <div class="temp">0°C/-2°C</div></li>
-             <li class="days">⛅Tuesday<div class="temp">0°C/-2°C</div></li>
-             <li class="days">🌧Wednesday<div class="temp">0°C/-2°C</div></li>
-             <li class="days">🌤Thursday<div class="temp">0°C/-2°C</div></li>
-             <li class="days">🌨Friday<div class="temp">0°C/-2°C</div></li> 
-          </ul>
-        </div> 
-      </div>
+             <div class="weather-forecast" id="forecast">
+             </div>
+            </div> 
+       </div>
     </div> 
     <p id="bottom"><a href="https://github.com/YuliaSoloshko/weather-app">Open-source code </a>by Yuliya Soloshko</p>
 
