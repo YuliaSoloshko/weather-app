@@ -115,7 +115,7 @@ function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let apiKey = "7613bo043926be542af06637tff802f8";
-  let geoUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=${units}`;
+  let geoUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
   axios.get(geoUrl).then(showWeather);
 }
 function getCurrentPosition() {
@@ -138,15 +138,35 @@ function showCelsiusTemp(event) {
 }
 
 function showKyiv(response) {
-  let tempKyiv = document.querySelector("kyivtemp");
-  console.log(response.data.temperature.current);
-  tempKyiv.innerHTML = response.data.temperature.current;
+  let tempKyiv = document.querySelector("#kyivtemp");
+  tempKyiv.innerHTML = Math.round(response.data.temperature.current);
 }
 
 function findKyiv() {
   let apiKey = "7613bo043926be542af06637tff802f8";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Kyiv&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showKyiv);
+}
+
+function showLisbon(response) {
+  let tempLisbon = document.querySelector("#lisbontemp");
+  tempLisbon.innerHTML = Math.round(response.data.temperature.current);
+}
+
+function findLisbon() {
+  let apiKey = "7613bo043926be542af06637tff802f8";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Lisbon&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showLisbon);
+}
+function showSeoul(response) {
+  let tempSeoul = document.querySelector("#seoultemp");
+  tempSeoul.innerHTML = Math.round(response.data.temperature.current);
+}
+
+function findSeoul() {
+  let apiKey = "7613bo043926be542af06637tff802f8";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Seoul&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showSeoul);
 }
 
 let celsiusTemp = null;
@@ -164,5 +184,8 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
+
 findKyiv();
+findLisbon();
+findSeoul();
 findCity("Kharkiv");
